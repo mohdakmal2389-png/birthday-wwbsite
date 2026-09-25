@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>HAPPY BIRTHDAY!✨🥰</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: linear-gradient(135deg, #ffd6e7, #ffeef5);
+
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow-x: hidden;
+            overflow-y: auto;
+            padding: 20px 0;
+            box-sizing: border-box;
+        }
+
+        .card {
+            background: white;
+
+            width: min(80%, 450px);
+            
+            box-sizing: border-box;
+
+            padding: 30px 18px;
+
+            border-radius: 25px;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+                animation: appear 1s ease;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 26;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+img,
+video {
+        max-width: 100px;
+        heigth: auto;
+        box-sizing: border-box;
+}
+
+        h1 {
+            color: #ff4f81;
+            font-size: 32px;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        button {
+            margin-top: 20px;
+
+            padding: 14px 28px;
+
+            border: none;
+            border-radius: 30px;
+
+            background: #ff4f81;
+            color: white;
+
+            font-size: 17px;
+            cursor: pointer;
+        
+            max-width: 100px;
+            box-sizing: border-box;
+             white-space: normal;
+            }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+.card {
+    animation: appear 1s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    font-size: 25px;
+    animation: floatUp 5s linear infinite;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+} 
+
+.message {
+    opacity: 0;
+    animation: textAppear 1s ease forwards;
+}
+
+.message:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.message:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.message:nth-child(4) {
+    animation-delay: 2.5s;
+}
+
+@keyframes textAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+       .floating-photo {
+    position: fixed;
+    width: 80px;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    z-index: 1;
+    opacity: 0;
+    animation: photoFloat 8s linear infinite;
+}
+
+.photo1 {
+    left: 5%;
+    bottom: -150px;
+    animation-delay: 0s;
+}
+
+.photo2 {
+    left: 68%;
+    bottom: -150px;
+    animation-delay: 2.5s;
+}
+
+.photo3 {
+    left: 35%;
+    bottom: -150px;
+    animation-delay: 5s;
+}
+
+.photo4 {
+    left: 15%;
+    bottom: -150px;
+    animation-delay: 7.5s;
+}
+
+.photo5 {
+    left: 82%;
+    bottom: -150px;
+    animation-delay: 10s;
+}
+
+.photo6 {
+    left: 45%;
+    bottom: -150px;
+    animation-delay: 12.5s;
+}
+
+.photo7 {
+    left: 25%;
+    bottom: -150px;
+    animation-delay: 15s;
+}
+
+.photo8 {
+    left: 75%;
+    bottom: -150px;
+    animation-delay: 17.5s;
+}
+
+.photo9 {
+    left: 55%;
+    bottom: -150px;
+    animation-delay: 20s;
+}
+
+.photo10 {
+    left: 90%;
+    bottom: -150px;
+    animation-delay: 22.5s;
+} 
+
+@keyframes photoFloat {
+    0% {
+        transform: translateY(0) rotate(-5deg);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: translateY(-55vh) rotate(5deg);
+        opacity: 0.95;
+    }
+
+    85% {
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: translateY(-115vh) rotate(-4deg);
+        opacity: 0;
+    }
+} 
+
+#finalScreen {
+    background: linear-gradient(135deg, #fff0f6, #ffe0ec, #fff7fa);
+    box-shadow: 0 15px 40px rgba(255, 79, 129, 0.22);
+    border: 1px solid rgba(255, 105, 150, 0.15);
+}
+#finalScreen h1 {
+    animation: finalTitle 1.2s ease;
+}
+
+#finalScreen p {
+    animation: finalText 1.2s ease;
+}
+
+#finalScreen h2 {
+    animation: finaltext 1.8s ease;
+}
+    
+@keyframes finalTitle {
+    from {
+        opacity: 0;
+        transform: translateY(-15px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+    @keyframes finalText {
+        from {
+            opacity: 0;
+            transform: translateY(15px);
+        }
+        to {
+        opacity: 1;
+        transform: translateY(0);
+        }  
+    }
+
+    .surprise-btn {
+    margin-top: 22px;
+    padding: 13px 24px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ff6f9c, #ff4f81);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 6px 15px rgba(255, 79, 129, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.surprise-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 79, 129, 0.35);
+} 
+    
+.final-sparkles {
+    position: relative;
+    height: 35px;
+    margin-bottom: 5px;
+}
+
+.final-sparkles span {
+    position: absolute;
+    font-size: 20px;
+    animation: sparkleFloat 3s ease-in-out infinite;
+}
+
+.final-sparkles span:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.final-sparkles span:nth-child(2) {
+    left: 30%;
+    animation-delay: 0.6s;
+}
+
+.final-sparkles span:nth-child(3) {
+    left: 50%;
+    animation-delay: 1.2s;
+}
+
+.final-sparkles span:nth-child(4) {
+    left: 70%;
+    animation-delay: 1.8s;
+}
+
+.final-sparkles span:nth-child(5) {
+    left: 90%;
+    animation-delay: 2.4s;
+}
+
+@keyframes sparkleFloat {
+    0%, 100% {
+        transform: translateY(5px) scale(0.9);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: translateY(-8px) scale(1.15);
+        opacity: 1;
+    }
+} 
+
+#finalScreen h2 {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 22px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #ff4f81, #ff86a8);
+    color: white !important;
+    box-shadow: 0 8px 25px rgba(255, 79, 129, 0.35);
+    animation: birthdayPop 1.5s ease-in-out infinite;
+}
+
+@keyframes birthdayPop {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.10);
+    }
+} 
+
+.birthday-decoration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin: 5px 0 18px;
+}
+
+.birthday-decoration span {
+    display: inline-block;
+    font-size: 28px;
+    animation: birthdayFloat 2s ease-in-out infinite;
+}
+
+.birthday-decoration span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.birthday-decoration span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.birthday-decoration span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.birthday-decoration span:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
+.birthday-decoration span:nth-child(5) {
+    animation-delay: 1s;
+}
+
+@keyframes birthdayFloat {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-10px) scale(1.12);
+    }
+} 
+
+.final-hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.final-hearts span {
+    position: absolute;
+    font-size: 35px;
+    display: block;
+    animation: finalHeartFloat 6s linear infinite;
+}
+
+.final-hearts span:nth-child(1) {
+    left: 10%;
+    bottom: 0;
+}
+
+.final-hearts span:nth-child(2) {
+    left: 30%;
+    bottom: 0;
+    animation-delay: 1s;
+}
+
+.final-hearts span:nth-child(3) {
+    left: 50%;
+    bottom: 0;
+    animation-delay: 2s;
+}
+
+.final-hearts span:nth-child(4) {
+    left: 70%;
+    bottom: 0;
+    animation-delay: 3s;
+}
+
+.final-hearts span:nth-child(5) {
+    left: 90%;
+    bottom: 0;
+    animation-delay: 4s;
+}
+
+@keyframes finalHeartFloat {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+} 
+
+.cute-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: -5px 0 20px;
+    color: #ff86a8;
+}
+
+.cute-divider span {
+    display: inline-block;
+}
+
+.cute-divider span:nth-child(2) {
+    font-size: 18px;
+    animation: dividerHeart 1.5s ease-in-out infinite;
+}
+
+@keyframes dividerHeart {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+} 
+
+.choice {
+top: 20px;
+display: flex !important;
+flex-direction: row !important;
+justify-content: center;
+align-items: center;
+gap: 15px;
+position: relative;
+min-height: 70px;
+}
+
+.cake-screen {
+    text-align: center;
+}
+
+.cake-screen h1 {
+    color: #ff4f81;
+    margin-bottom: 10px;
+}
+
+.cake-area {
+    position: relative;
+    width: (100%)
+    max-width: 280px;
+    height: 220px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    touch-action: none;
+}
+
+.cake {
+    position: relative;
+    font-size: 120px;
+    z-index: 2;
+}
+
+.cake-top {
+    font-size: 35px;
+    position: absolute;
+    top: -5px;
+    left: 42%;
+    z-index: 3;
+}
+
+.cake-body {
+    font-size: 120px;
+}
+
+.knife {
+    position: absolute;
+    font-size: 55px;
+    left: -50px;
+    top: 80px;
+    z-index: 5;
+    opacity: 0;
+}
+
+    @media (max-width: 480px) {
+        .knife {
+            font-size: 45px;
+            left: -35px;
+        }
+
+        .swipe-line {
+            max-width: 200px;
+    }
+}
+
+.swipe-line {
+    position: absolute;
+    width: 0;
+    height: 4px;
+    background: #ff4f81;
+    top: 115px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    opacity: 0;
+    z-index: 4;
+}
+
+#cakeHint {
+    color: #ff4f81;
+    font-size: 17px;
+    animation: swipeHint 1.5s ease-in-out infinite;
+}
+
+@keyframes swipeHint {
+    0%, 100% {
+        transform: translateX(-8px);
+    }
+
+    50% {
+        transform: translateX(8px);
+    }
+} 
+
+.cake.cut {
+    animation: cakeCutSmooth 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.cake.cut .cake-body {
+    animation: cakeBodyMove 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.cake.cut .cake-top {
+    animation: cakeTopMove 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.cake.cut::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 105px;
+    background: rgba(255, 79, 129, 0.7);
+    left: 54%;
+    top: 10px;
+    border-radius: 10px;
+    transform: rotate(7deg) scaleY(0);
+    transform-origin: top;
+    animation: cutMark 0.5s ease-out 0.25s forwards;
+    z-index: 10;
+}
+
+@keyframes cakeCutSmooth {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    35% {
+        transform: translateX(-2px) rotate(-1deg);
+    }
+
+    65% {
+        transform: translateX(2px) rotate(1deg);
+    }
+
+    100% {
+        transform: translateX(4px) rotate(1.2deg);
+    }
+}
+
+@keyframes cakeBodyMove {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(6px);
+    }
+}
+
+@keyframes cakeTopMove {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(3px) rotate(4deg);
+    }
+}
+
+@keyframes cutMark {
+    0% {
+        transform: rotate(7deg) scaleY(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(7deg) scaleY(1);
+        opacity: 1;
+    }
+} 
+
+    </style>
+
+</head>
+
+
+<body>
+
+<div class="heart" style="left: 10%;">❤️</div>
+<div class="heart" style="left: 30%; animation-delay: 1s;">💗</div>
+<div class="heart" style="left: 50%; animation-delay: 2s;">💕</div>
+<div class="heart" style="left: 70%; animation-delay: 0.5s;">💖</div>
+<div class="heart" style="left: 90%; animation-delay: 1.5s;">❤️</div> 
+
+<div class="card" id="codeScreen">
+
+    <h1>Oii, Ruko! ✋🤨</h1>
+
+    <p>
+     pehle secret code batao... Ni to entry nahi milegi 😏🤌
+    </p>
+
+    <input
+        type="password"
+        id="secretCode"
+        maxlength="4"
+        inputmode="numeric"
+        placeholder="Enter code"
+        style="
+            width: 180px;
+            padding: 12px;
+            border: 2px solid #ff86a8;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 20px;
+            outline: none;
+        "
+    >
+
+    <br>
+
+    <button onclick="unlockWebsite()">
+        Unlock Surprise 💗
+    </button>
+
+    <p id="codeMessage"></p>
+
+</div> 
+
+<div class="card" id="firstScreen" style="display: none;">
+
+        <h1>I've 👉👈 Made Something For U 🙈</h1>
+
+        <p>Ek chota sa surprise hai Aapke liye dekhna hai ik Aapko pehle se mlum hai wht it is but still!
+            😗
+
+            <button id="Yesbtn" onclick="openSurprise()">
+             YES 💌</button>
+
+            <button id="Nobtn" onclick="this.style.position='fixed';
+            this.style.left=Math.random()*(window.innerWidth-this.offsetWidth-20)+'px';
+             this.style.top=Math.random()*(window.innerHeight-this.offsetHeight-20)+'px';
+
+            let yes = document.getElementById('Yesbtn');
+        let currentSize = parseFloat(getComputedStyle(yes).fontSize);
+            yes.style.fontSize = (currentSize + 10) + 'px';
+         yes.style.padding = '16px 32px';"> NO 🥲
+</button> 
+           
+            </div>
+
+        <div class="card" id="secondScreen" style="display: none;">
+
+        <h1>Surprise!💗</h1>
+
+        <p>
+            			💗
+            Allah SWT aapki zindagi ko hamesha khushiyon, 
+            sukoon aur barkat se bhar de. Ameen. 🥹🤲🏻✨          
+
+        </p>
+	
+	<p>
+
+		<img src="test.jpg.jpg" alt="A SHORT BHONDU!" style="width: 100%; 
+		max-width: 280px; max-height: 300px; object-fit: contain; border-radius: 20px;"> 
+	<p>
+
+           Thoda aur hai lekin jyda nhi hai ji 👉👈💗...
+        </p>
+		<button onclick="document.getElementById('thirdScreen').style.display='none';
+        document.getElementById('finalScreen').style.display='block';">A little more for you 😌🌸</button>
+
+    </div>
+
+<div class="card cake-screen" id="cakeScreen" style="display: none;">
+
+    <h1>Time to Cut the Cake! 🎂</h1>
+
+    <p>Swipe across the cake to cut it! 👆</p>
+
+    <div class="cake-area" id="cakeArea">
+
+        <div class="cake">
+            <div class="cake-top">🍓</div>
+            <div class="cake-body">🎂</div>
+        </div>
+
+        <div class="knife" id="knife">🔪</div>
+
+        <div class="swipe-line" id="swipeLine"></div>
+
+    </div>
+
+    <p id="cakeHint">← Swipe here →</p>
+
+</div> 
+
+	<div class="card" id="thirdScreen" style="display: none;">
+
+            <h1>One more Cheez!...😏</h1>
+
+    </p>
+        U make My ordinary days special i donut know how!!! 🌸
+    </p>
+
+    <p>
+        And U mean alot to me!! 😭🫶
+    </p>
+
+    <p>
+
+            I hope Aapko ye sb psnd Aaye aur Aap muskhra den! 😗👉👈
+            </p>
+
+            <button onclick="shownext()">There's more for U ji 😝</button>
+
+        </div>
+
+        <div class="card" id="finalScreen" style="Display: none;">
+
+        <div class="final-hearts">
+        <span>.❤️</span>
+        <span>❤️</span>
+        <span>❤️</span>
+        <span>❤️</span>
+        </div>
+
+            <h1>For You... 💕</h1>
+
+            <div class=""cute-divider">
+                <span>----</span>
+                <span>💗</span>
+                <span>----</span>
+            </div>
+
+            <div class=""birthday-decoration">
+                <span>🎂</span>
+                <span>🎉</span>
+                <span>🫶</span>
+                <span>✨</span>
+                <span>💍😳</span>
+
+            </div>
+
+            <p>
+                I don't know how to explain it perfectly...</p>
+
+            <p>
+                But I just want to say that you are very special to me and I am grateful for you being in my life.
+                </p>
+
+                <p>
+                    I hope this little surprise brings a smile to your face and makes your day a little brighter.😭🌸
+                </p>
+
+                <h2 style="color: #ff4f81;">Aap Heppy Heppy rho kro sed sed to mai bhi rehta hu</h2>
+
+                <p>
+                    - from someone who genuinelycares about you! 💖
+                </p>
+
+                <img src="2550.jpg.jpg" class="floating-photo photo1" alt="Photo">
+
+                <img src="2540.jpg.jpg" class="floating-photo photo2" alt="Photo">
+
+                <img src="2489.jpg.jpg" class="floating-photo photo3" alt="Photo">
+
+                <img src="photo4.jpg.jpg" class="floating-photo photo4" alt="Photo">
+
+                <img src="photo5.jpg.jpg" class="floating-photo photo5" alt="Photo">
+
+                <img src="photo6.jpg.jpg" class="floating-photo photo6" alt="Photo">
+
+                <img src="photo7.jpg.jpg" class="floating-photo photo7" alt="Photo">
+
+                <img src="photo8.jpg.jpg" class="floating-photo photo8" alt="Photo">
+
+                <img src="photo9.jpg.jpg" class="floating-photo photo9" alt="Photo">
+
+                <img src="photo10.jpg.jpg" class="floating-photo photo10" alt="Photo"> 
+
+                <video controls style="width: 100%; max-width: 320px; border-radius: 20px;">
+                <source src="video.mp4.mp4" type="video/mp4">
+            </video>
+
+                    <div id="hiddenMessage">
+                        <h2>ek chota sa Message 💖</h2>
+
+                        <p>May your smile always stay the same no matter wht life brings. ✨
+                        And honestly, i just hope i get to see that smile every day for the rest of my life. 😌💖
+                        I'll pray for U and family's Gud health, Success and HAppiness in life! 💗
+                        AMEEN!
+                        </p>
+                    </div>
+
+            <div class="card" id="moreScreen" style="display: none;">
+
+                <h1>A little more!😗💍</h1>
+
+            </div>"
+
+        </div>
+
+          <script>
+
+            function unlockWebsite() {
+    const code = document.getElementById("secretCode").value;
+    const message = document.getElementById("codeMessage");
+
+    if (code === "3119") {
+
+        message.textContent = "👀💗 Code sahi hai... andar aao! ";
+
+        setTimeout(function() {
+            document.getElementById("codeScreen").style.display = "none";
+            document.getElementById("firstScreen").style.display = "block";
+        }, 1000);
+
+    } else {
+
+        message.textContent = "Areee! 😭 Ye code galat hai! Itna bhi mushkil nahi tha 😂";
+
+    }
+} 
+
+        function openSurprise() {
+
+
+
+    document.getElementById("firstScreen").style.display = "none";
+    document.getElementById("cakeScreen").style.display = "block"; setupCakeSwipe();
+}
+
+let cakeStartX = 0;
+
+function setupCakeSwipe() {
+    const cakeArea = document.getElementById("cakeArea");
+
+    cakeArea.addEventListener("pointerdown", function(e) {
+        cakeStartX = e.clientX;
+        cakeArea.setPointerCapture(e.pointerId);
+    });
+
+    cakeArea.addEventListener("pointerup", function(e) {
+        const swipeDistance = e.clientX - cakeStartX;
+
+        if (swipeDistance > 100) {
+            cutCake();
+        }
+    });
+} 
+
+function cutCake() {
+    const cake = document.querySelector("#cakeScreen .cake");
+    const knife = document.getElementById("knife");
+    const swipeLine = document.getElementById("swipeLine");
+    const hint = document.getElementById("cakeHint");
+
+    if (cake.classList.contains("cut")) {
+        return;
+    }
+
+    cake.classList.add("cut");
+
+    knife.style.opacity = "1";
+    knife.style.transition = "left 1.1s cubic-bezier(0.22, 1, 0.36, 1)";
+    knife.style.left = "230px";
+
+    swipeLine.style.opacity = "1";
+    swipeLine.style.transition = "width 1.1s cubic-bezier(0.22, 1, 0.36, 1)";
+    swipeLine.style.width = "220px";
+
+    hint.textContent = "Yayyyyyyyyyy!!! 🎉🎂";
+
+    setTimeout(function() {
+        document.getElementById("cakeScreen").style.display = "none";
+        document.getElementById("secondScreen").style.display = "block";
+    }, 1000);
+} 
+
+function moveNo() {
+    const noBtn = document.getElementById("Nobtn");
+    const yesBtn = document.getElementById("Yesbtn");
+
+    noBtn.style.position = "fixed";
+
+    const maxX = window.innerWidth - noBtn.offsetWidth - 20;
+    const maxY = window.innerHeight - noBtn.offsetHeight - 20;
+
+    const x = Math.max(10, Math.random() * maxX);
+    const y = Math.max(10, Math.random() * maxY);
+
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+
+    yesBtn.style.transform = "scale(1.15)";
+}
+	
+	function showNext() {
+
+    document.getElementById("secondScreen").style.display = "none";
+
+        let third = 
+    document.getElementById("thirdScreen");
+
+        third.style.display = "block";
+
+            third.innerHTML = `
+                <h1>One more Cheez!...😏
+                </h1>
+
+                <p>U make My ordinary days special i donut know how!!! 🌸</p>
+
+                <p>And U mean alot to me!! 😭🫶</p>
+
+                <p>I hope Aapko ye sb psnd Aaye aur Aap muskhra den! 😗👉👈</p>
+                
+                <button onclick="showFinal()">There's more for U ji 😝</button> `;
+        }
+            
+            function showFinal() {
+
+                document.getElementById("thirdScreen").style.display = "none";
+
+                let Final = document.getElementById("finalScreen");
+
+                final.style.display = "block";
+                final.style.animation = "appear 1s ease";
+            
+            }
+
+            function showHiddenMessage() {
+
+                document.getElementById("hiddenMessage").style.display = "block";
+            }
+
+    </script>
+
+</body>
+
+</html> 
